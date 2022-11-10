@@ -7,5 +7,7 @@
 - Email : cb009650@students.apiit.lk
 - Contact No : 0704221714
 
-##Team Member
--Name
+## Team Member 1
+- Name : aadil
+- Email : yugd
+- Contact : yjyjgygyuf
