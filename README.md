@@ -9,5 +9,5 @@
 
 ## Team Member 1
 - Name : aadil
-- Email : yugd
-- Contact : yjyjgygyuf
+- Email : CB010188@students.apiit.lk
+- Contact : 0768938041
