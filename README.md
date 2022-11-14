@@ -8,6 +8,6 @@
 - Contact No : 0704221714
 
 ## Team Member 1
-- Name : aadil
+- Name : Aadil
 - Email : CB010188@students.apiit.lk
 - Contact : 0768938041
