@@ -16,3 +16,8 @@
 - Name : Hayyan
 - Email : CB010611@students.apiit.lk
 - Contact : 0724038719
+
+## Team Member 3
+- Name : Shashini
+- Email : CB010581@students.apiit.lk
+- Contact : 0711337175
