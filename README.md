@@ -11,3 +11,8 @@
 - Name : Aadil
 - Email : CB010188@students.apiit.lk
 - Contact : 0768938041
+
+## Team Member 2
+- Name : Hayyan
+- Email : CB010611@students.apiit.lk
+- Contact : 0724038719
