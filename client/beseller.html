@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Become A Seller</title>
+        <link rel="shortcut icon" type="image/png" href="images/faveicon.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/beseller.css">
+        
+    </head>
+
+    <header>
+        <!--Navigation-->
+            <div class="Searchbar">
+                <a href="#">
+                    <img class="Nav-logo" src="images/faveicon.png" alt="Logo">
+                </a>                
+                <div class="Search-container">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+        <nav class="Navigation">
+            <div class="Navigation-links">
+                <ul>
+                    <li class="li"><a href="index.html">Home</a></li>
+                    <li class="li"><a href="beseller.html">Become A Seller</a></li>
+                    <li class="li"><a href="browseservices.html">Services</a></li>
+                    <li class="li"><a href="aboutus.html">About Us</a></li>
+                    <li class="il" id="Popup-signUp"><a href="#">Sign Up</a></li>
+                    <li class="il" id="Popup-login"><a href="#">Login</a></li>
+                </ul>
+            </div>    
+        </nav>
+        <div id="SignUp" class="Popup">
+            <div class="Popup-content">
+                <div class="Popup-header">
+                    <span class="close3">&times;</span>
+                    <h2 style="text-align: center;">Create Account</h2> 
+                </div>
+                <div class="Popup-body">
+                    <form>
+                        <input class="input" type="text" placeholder="Sign Up with Google" name="Google">
+                        <input class="input" type="text" placeholder="Sign Up with Facebook" name="Facebook">
+                        <p style="text-align: center;">-OR-</p>
+                        <input class="input1" type="text" placeholder="Full Name" name="fname">
+                        <input class="input1" type="text" placeholder="Email Address" name="email">
+                        <input class="input1" type="text" placeholder="Password" name="password">
+                        <button class="btn" type="submit">Create Account</button>
+                        <p style="text-align: center;">Already have an account? <a href="#">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="SignIn" class="Popup">
+            <div class="Popup-content">
+                <div class="Popup-header">
+                    <span class="close4">&times;</span>
+                    <h2 style="text-align: center;">Sign In</h2> 
+                </div>
+                <div class="Popup-body" >
+                    <form>
+                        <input class="input" type="text" placeholder="Sign In with Google" name="Google">
+                        <input class="input" type="text" placeholder="Sign In with Facebook" name="Facebook">
+                        <p style="text-align: center;">-OR-</p>
+                        <input class="input1" type="text" placeholder="Email Address" name="email">
+                        <input class="input1" type="text" placeholder="Password" name="password">
+
+                        <button class="btn" type="submit">Sign In</button>
+                        <p style="text-align: center;">Need an account? <a href="#">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>  
+        </div>
+
+    </header>
+    <body>
+
+        <div class="container">
+        
+            <div class="Form">
+               
+                <div class="title"><b>Fill in the Application Below.</b></div>
+                <form class="form1">
+                    <div class="userDetails">
+                        <div class="inputBox">
+                            <span class="details">Full Name</span>
+                            <input type="text" id="fname" placeholder=""  required class="Inputbox1">
+                        </div>
+                        <div id="subContainer">
+                        <div class="inputBox">
+                            <span class="details">Years Of Experience</span>
+                            <input type="text" id="yrsOfExperience" placeholder="" required class="Inputbox2">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Date Of Birth</span>
+                            <input type="text" id="bday" placeholder="" required class="Inputbox2">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Mobile Number</span>
+                            <input type="text" id="mobileNo" placeholder="" required class="Inputbox2">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Email Address</span>
+                            <input type="text" id="emailAdd" placeholder="" required class="Inputbox2">
+                        </div>
+                        </div>
+                        <div class="subTitle">Current Residency</div>
+                        <div id="subContainer">
+                        <div class="inputBox">
+                            <span class="details">Street Name</span>
+                            <input type="text" id="streetName" placeholder="" required class="Inputbox3">
+                            <input type="text" id="streetName" placeholder="" required class="Inputbox3">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Zip Code</span>
+                            <input type="text" id="zipCode" placeholder="" required class="Inputbox4">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">City</span>
+                            <input type="text" id="city" placeholder="" required class="Inputbox4">
+                        </div>
+                        </div>
+                        <div class="subTitle">Upload a clear PDF of your Identity Card, Birth Certificate and a picture of yourself.</div>
+                        <button>Upload</button>
+                        <div class="subTitle">Select what service category you belong to</div>
+                        <div id="CheckBox">
+                            <div id="CheckBox1">
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Painter</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Photographer</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Cleaner</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Gardner</span>
+                        </div>
+                            </div>
+                            <div id="CheckBox2">
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Cook</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Private Tutor</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Electricians</span>
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox">
+                            <span class="categories">Builders</span>
+                        </div>
+                            </div>
+                            <div id="CheckBox3">
+                        <div class="checkBox">
+                            <input placeholder="checkbox" type="checkbox">
+                            <span class="categories">Other</span>
+                            <textarea placeholder="If other, please explain what services you can provide" class="other"></textarea>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="subTitle">Please explain a bit about yourself</div>
+                        <div class="inputBox">
+                            <textarea placeholder="explain" required class="textarea2"></textarea>
+                        </div>
+                        
+                        <button class="submitbtn">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!--FOOTER-->
+
+        <div class="Footer-Bottom">
+            <a href="#">
+                <img class="logo1" src="Images/logo1.png" alt="Logo"> <p> COPYRIGHT&copy; AVAIL 2022</p>
+            </a> 
+
+            <div class="Footer-menu">
+                <ul class="Footer-menu">
+                    <li><a id="Popup-contact" href="#">Contact Us</a></li>
+                    <li><a id="Popup-newsletter" href="#">Sign Up For Our Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Newsletter" class="Popup">
+
+            <div class="Popup-content">
+                <div class="Popup-header">
+                    <span class="close2">&times;</span>
+                    <h2>Join Our Newsletter !!</h2>
+                </div>
+                <div class="Popup-body">
+                    <p>Enter your email below and join our mailing list so you can be notified of our exciting updates, deals, offers and much more !! Welcome to the AVAIL family.</p>
+                    <form>
+                        <input class="input" type="text" placeholder="Email Address" name="email">
+                        <button class="btn" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contact" class="Popup">
+
+            <div class="Popup-content">
+                <div class="Popup-header">
+                    <span class="close">&times;</span>
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="Popup-body">
+                    <p>Email Address - availbs@gmail.com/ emailavail@avbs.com</p>
+                    <p>Telephone Number - 070 567 8910/ 011 234 5678 </p>
+                    <p>Address - Level 12, Parkland Building No 33, Park Street 2, Colombo</p>
+                
+                </div>
+            </div>
+        </div>
+
+        <!--END OF FOOTER-->
+
+       
+
+
+
+
+
+        
+
+
+     <script src="js/navigation.js"></script>
+     <script src="js/beseller.js"></script>
+    </body>
+</html>
