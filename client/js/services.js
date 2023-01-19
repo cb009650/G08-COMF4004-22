@@ -37,3 +37,7 @@ window.onclick = function(event){
         popup4.style.display="none";
     }
 }
+
+function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+}
