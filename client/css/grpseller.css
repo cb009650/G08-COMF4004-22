@@ -1,137 +1,143 @@
-.sellers{
+.service-butt{
+    float: right;
+}
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: #54677c;
+.service-butt ul{
+    display: flex;
+  
+}
+.service-butt ul li{
+    padding-right: 20px;
+    display: block;  
+}
 
-    min-height: 100vh;
+.service-butt ul li a{
+    padding: 15px 30px;
+    color: #ffffff;
+    background-color: #0D152F;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+
+.box{
+    background-color: #D9D9D9;
+    border-radius: 40px;
+    margin: 10px;
+}
+.subContainer1, .subContainer2, .subContainer3, .subContainer4{
     width: 100%;
-    background-color: #e4e4e4;
+    height: auto;
     display: flex;
-    /* Responsive behaviour */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 16px;
 }
-
-.slot {
-    position: relative;
-    width: 300px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-    padding: 16px;
-    margin:  56px 24px;
+.subBox{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
-
-.slot-img {
+.sub{
+    padding: 20px;
+}
+.rating{
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
-    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
 }
-
-.slot-img img {
-    width: 100%;
-    transform: scale(1.2);
+.rating >*{
+    float: right;
 }
-
-p {
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.name {
-    margin-top: 80px;
-    font-size: 1.4em;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    margin-bottom: 8px;
-}
-
-.socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    margin: 12px 8px;
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: opacity 0.4s;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-button i {
-    color: #fff;
-    font-size: 1.4em;
-}
-
-/* Social media colors */
-button.facebook {
-    background-color: #004285;
-} 
-
-button.twitter {
-    background-color: #1da1f2;
-}
-
-button.pinterest {
-    background-color: #d3263a;
-} 
-
-
-
-
-.card-btn {
+.rating label{
     display: block;
-    width: 100%;
-    padding: 0.2rem;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #3363ff;
-    background-color: #d8e0fd;
-    border: none;
-    border-radius: 0.4rem;
-    transition: 0.2s;
+    position: relative;
     cursor: pointer;
-    letter-spacing: 0.1rem;
-  }
-  
-  .card-btn span {
-    margin-left: 1rem;
-    transition: 0.2s;
-  }
-  
-  .card-btn:hover,
-  .card-btn:active {
-    background-color: #c2cffc;
-  }
-  
-  .card-btn:hover span,
-  .card-btn:active span {
-    margin-left: 1.5rem;
-  }
+    height: 40px;
+    width: 20%;
+}
+.rating label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+.rating label:hover::after{
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input{
+    display: none;
+}
+.rating input:checked + label::after,
+.rating input:checked ~ label::after{
+    content: "★";
+    color: #f9bf3b;
+    text-shadow: 0 0 20px #f9bf3b;
+}
+.heartBtn{
+    float: right;
+    padding-left: 200px;
+    padding-top: 10px;
+}
+.heartBtn label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    width: 20%;
+}
+.heartBtn label::after{
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    content: "♡";
+    color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+.heartBtn label:hover::after{
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.heartBtn input{
+    display: none;
+}
+.heartBtn input:checked + label::after,
+.heartBtn input:checked ~ label::after{
+    content: "♥";
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+.submitbtn{
+    text-align: center;
+    background-color:#01002E ;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 20%;
+}
+
+.checked {
+    color: orange;
+}
+
+.heart {
+    font-size: 25px;
+    color:red;
+    cursor: pointer;
+    padding-left: 230px;
+}
