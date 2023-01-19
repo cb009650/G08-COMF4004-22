@@ -130,3 +130,14 @@
     padding: 10px;
     width: 20%;
 }
+
+.checked {
+    color: orange;
+}
+
+.heart {
+    font-size: 25px;
+    color:red;
+    cursor: pointer;
+    padding-left: 230px;
+}
