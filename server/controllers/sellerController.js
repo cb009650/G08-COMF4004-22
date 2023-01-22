@@ -172,61 +172,26 @@ exports.submitSellerOnPost = async(req, res) => {
   }
 }
 
-/**
- * DELETE /seller/:id
- * Delete a seller
- */
-exports.deleteSeller = async (req, res) => {
+
+// Delete seller
+async function deleteSeller(){
   try {
-    let sellerId = req.params.id;
-    await Seller.findByIdAndDelete(sellerId);
-    res.status(200).send({message: "Seller successfully deleted"});
+    await Seller.deleteOne({ name: 'New name Updated' });
   } catch (error) {
-    res.status(500).send({message: error.message || "Error Occurred"});
+    console.log(error);
+ }
+}
+deleteSeller();
+
+
+//Update seller
+async function updateSeller(){
+  try {
+    const res = await Seller.updateOne({ name: 'images testing 2' }, { name: 'New name Updated' });
+   res.n; // Number of documents matched
+    res.nModified; // Number of documents modified
+  } catch (error) {
+    console.log(error);
   }
 }
-
-
-
-/**
- * PUT /seller/:id
- * Update a seller
- */
-exports.updateSeller = async (req, res) => {
-  try {
-    let sellerId = req.params.id;
-    let updatedSeller = await Seller.findByIdAndUpdate(sellerId, req.body);
-    res.status(200).send({message: "Seller successfully updated", updatedSeller});
-  } catch (error) {
-    res.status(500).send({message: error.message || "Error Occurred"});
-  }
-}
-
-
-
-
-// // Delete seller
-// async function deleteSeller(){
-//   try {
-//     await Seller.deleteOne({ name: 'New name From Form' });
-//   } catch (error) {
-//     console.log(error);
-//  }
-// }
-// deleteSeller();
-
-
-// //Update seller
-// async function updateSeller(){
-//   try {
-//     const res = await Seller.updateOne({ name: 'New name' }, { name: 'New name Updated' });
-//    res.n; // Number of documents matched
-//     res.nModified; // Number of documents modified
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-// updateSeller();
-
-
-
+updateSeller();
