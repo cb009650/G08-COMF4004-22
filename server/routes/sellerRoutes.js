@@ -18,6 +18,8 @@ router.post('/submit-seller', sellerController.submitSellerOnPost);
 
 router.get('/services', sellerController.exploreLatest);
 
+
+
 router.get('/aboutus',(req,res) => {
     res.render('aboutus')
   })
